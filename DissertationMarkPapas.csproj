@@ -1,0 +1,408 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\xunit.core.2.4.0\build\xunit.core.props" Condition="Exists('packages\xunit.core.2.4.0\build\xunit.core.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{A552E15B-EA4F-4080-B9C7-2B1F89328E92}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>DissertationMarkPapas</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bass.Net, Version=2.4.12.6, Culture=neutral, PublicKeyToken=b7566c273e6ef480, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Stuff\Downloads\Bass24.Net\v4.5\Bass.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="CSCore, Version=1.2.1.1, Culture=neutral, PublicKeyToken=5a08f2b6f4415dea, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\CSCore.1.2.1.1\lib\net35-client\CSCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Exocortex.DSP.v1, Version=1.0.1373.39154, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Stuff\Downloads\ExocortexDSP_v1.2\bin\Release\Exocortex.DSP.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Filtering, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\MathNet.Filtering.0.4.0\lib\net40\MathNet.Filtering.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\MathNet.Numerics.3.8.0\lib\net40\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>packages\xunit.abstractions.2.0.2\lib\net35\xunit.abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>packages\xunit.assert.2.4.0\lib\netstandard1.1\xunit.assert.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>packages\xunit.extensibility.core.2.4.0\lib\net452\xunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.4.0.4049, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>packages\xunit.extensibility.execution.2.4.0\lib\net452\xunit.execution.desktop.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\diplwmatikiBass\v14\.suo" />
+    <None Include=".vs\testBassGood\v14\.suo" />
+    <None Include="app.config" />
+    <None Include="DissertationMarkPapas\App.config" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\allFreqs.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\Angles.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\autocorrelation.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\data.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\dataHammed.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\dataList.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\dataProcessed.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\dataProcessedInside.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\HcMean.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\HcValues.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\LPC.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\magnitudes.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\output.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\PdValues.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\files\roots.csv" />
+    <None Include="DissertationMarkPapas\bin\Debug\testBassGood.application" />
+    <None Include="DissertationMarkPapas\bin\Debug\testBassGood.exe.config" />
+    <None Include="DissertationMarkPapas\bin\Debug\testBassGood.exe.manifest" />
+    <None Include="DissertationMarkPapas\bin\Debug\testBassGood.vshost.application" />
+    <None Include="DissertationMarkPapas\bin\Debug\testBassGood.vshost.exe.config" />
+    <None Include="DissertationMarkPapas\bin\Debug\testBassGood.vshost.exe.manifest" />
+    <None Include="DissertationMarkPapas\diplwmatikiBass_TemporaryKey.pfx" />
+    <None Include="DissertationMarkPapas\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="DissertationMarkPapas\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="DissertationMarkPapas\obj\Debug\diplwmatikiBass.csproj.GenerateResource.Cache" />
+    <None Include="DissertationMarkPapas\obj\Debug\diplwmatikiBass.csprojResolveAssemblyReference.cache" />
+    <None Include="DissertationMarkPapas\obj\Debug\testBassGood.application" />
+    <None Include="DissertationMarkPapas\obj\Debug\testBassGood.csproj.GenerateResource.Cache" />
+    <None Include="DissertationMarkPapas\obj\Debug\testBassGood.csprojResolveAssemblyReference.cache" />
+    <None Include="DissertationMarkPapas\obj\Debug\testBassGood.exe.manifest" />
+    <None Include="DissertationMarkPapas\packages.config" />
+    <None Include="DissertationMarkPapas\Properties\Settings.settings" />
+    <None Include="packages.config" />
+    <None Include="packages\BASS.Native.2.4.12.2\BASS.Native.2.4.12.2.nupkg" />
+    <None Include="packages\BASS.Native.2.4.12.2\build\BASS.Native.targets" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\bass.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\bassalac.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\basscd.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\bassdsd.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\bassenc.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\bassenc_ogg.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\bassenc_opus.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\bassflac.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\basshls.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\bassmidi.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\bassmix.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\bassopus.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\basswasapi.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\basswma.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\basswv.chm" />
+    <None Include="packages\BASS.Native.2.4.12.2\content\native\Help\bass_fx.chm" />
+    <None Include="packages\CSCore.1.2.1.1\CSCore.1.2.1.1.nupkg" />
+    <None Include="packages\MathNet.Filtering.0.4.0\MathNet.Filtering.0.4.0.nupkg" />
+    <None Include="packages\MathNet.Numerics.3.8.0\MathNet.Numerics.3.8.0.nupkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DissertationMarkPapas\DataTypes\CSVClustering.cs" />
+    <Compile Include="DissertationMarkPapas\Filtering\ButterworthFilter.cs" />
+    <Compile Include="DissertationMarkPapas\Forms\Clustering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DissertationMarkPapas\DataTypes\ClusteringFile.cs" />
+    <Compile Include="DissertationMarkPapas\BasicTypes\Complex.cs" />
+    <Compile Include="DissertationMarkPapas\DataTypes\CSVCreator.cs" />
+    <Compile Include="DissertationMarkPapas\BasicTypes\Enums.cs" />
+    <Compile Include="DissertationMarkPapas\Filtering\LPC.cs" />
+    <Compile Include="DissertationMarkPapas\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="DissertationMarkPapas\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="DissertationMarkPapas\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="DissertationMarkPapas\BasicTypes\Polynomial.cs" />
+    <Compile Include="DissertationMarkPapas\Program.cs" />
+    <Compile Include="DissertationMarkPapas\Properties\AssemblyInfo.cs" />
+    <Compile Include="DissertationMarkPapas\Properties\Resources.Designer.cs" />
+    <Compile Include="DissertationMarkPapas\Properties\Settings.Designer.cs" />
+    <Compile Include="DissertationMarkPapas\Filtering\Quicksort.cs" />
+    <Compile Include="DissertationMarkPapas\Forms\Recording.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DissertationMarkPapas\Forms\Recording.Designer.cs">
+      <DependentUpon>Recording.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DissertationMarkPapas\DataTypes\RecordingData.cs" />
+    <Compile Include="DissertationMarkPapas\BasicTypes\Root.cs" />
+    <Compile Include="DissertationMarkPapas\Forms\SpeechCorrection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DissertationMarkPapas\Forms\SpeechCorrection.Designer.cs">
+      <DependentUpon>SpeechCorrection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DissertationMarkPapas\Vowel\IVowel.cs" />
+    <Compile Include="DissertationMarkPapas\DataTypes\SynthesizedData.cs" />
+    <Compile Include="DissertationMarkPapas\Forms\UIInteraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DissertationMarkPapas\Vowel\VowelFormants.cs" />
+    <Compile Include="DissertationMarkPapas\Vowel\VowelUtteredHC.cs" />
+    <Compile Include="DissertationMarkPapas\Vowel\VowelUtteredPD.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DissertationMarkPapas\bin\Debug\app.publish\testBassGood.exe" />
+    <Content Include="DissertationMarkPapas\bin\Debug\bass.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\Bass.Net.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\Bass.Net.xml" />
+    <Content Include="DissertationMarkPapas\bin\Debug\bassenc.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\bass_fx.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\CSCore.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\CSCore.xml" />
+    <Content Include="DissertationMarkPapas\bin\Debug\Exocortex.DSP.v1.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\Exocortex.DSP.v1.pdb" />
+    <Content Include="DissertationMarkPapas\bin\Debug\files\converted.wav" />
+    <Content Include="DissertationMarkPapas\bin\Debug\MathNet.Filtering.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\MathNet.Filtering.xml" />
+    <Content Include="DissertationMarkPapas\bin\Debug\MathNet.Numerics.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\MathNet.Numerics.xml" />
+    <Content Include="DissertationMarkPapas\bin\Debug\NAudio.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\NAudio.xml" />
+    <Content Include="DissertationMarkPapas\bin\Debug\temp.wav" />
+    <Content Include="DissertationMarkPapas\bin\Debug\testBassGood.exe" />
+    <Content Include="DissertationMarkPapas\bin\Debug\testBassGood.pdb" />
+    <Content Include="DissertationMarkPapas\bin\Debug\testBassGood.vshost.exe" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bassalac.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\basscd.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bassdsd.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bassenc.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bassenc_ogg.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bassenc_opus.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bassflac.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\basshls.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bassmidi.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bassopus.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\basswma.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\basswv.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\basszxtune.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bass_aac.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bass_ac3.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bass_ape.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bass_mpc.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bass_ofr.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bass_spx.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\bass_tta.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\OptimFROG.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\Addon\tags.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\bass.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\bassmix.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\basswasapi.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\bass_fx.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x64\bass_vst.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bassalac.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\basscd.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bassdsd.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bassenc.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bassenc_ogg.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bassenc_opus.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bassflac.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\basshls.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bassmidi.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bassopus.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\basswma.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\basswv.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\basszxtune.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bass_aac.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bass_ac3.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bass_adx.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bass_ape.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bass_mpc.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bass_ofr.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bass_spx.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bass_tta.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\bass_winamp.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\OptimFROG.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\Addon\tags.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\bass.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\bassmix.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\basswasapi.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\bass_fx.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\bass_vst.dll" />
+    <Content Include="DissertationMarkPapas\bin\Debug\x86\bass_wadsp.dll" />
+    <Content Include="DissertationMarkPapas\diplwmatikiBass.csproj" />
+    <Content Include="DissertationMarkPapas\diplwmatikiBass.csproj.user" />
+    <Content Include="DissertationMarkPapas\obj\Debug\diplwmatikiBass.csproj.FileListAbsolute.txt" />
+    <Content Include="DissertationMarkPapas\obj\Debug\testBassGood.csproj.FileListAbsolute.txt" />
+    <Content Include="DissertationMarkPapas\obj\Debug\testBassGood.exe" />
+    <Content Include="DissertationMarkPapas\obj\Debug\testBassGood.pdb" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bassalac.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\basscd.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bassdsd.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bassenc.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bassenc_ogg.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bassenc_opus.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bassflac.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\basshls.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bassmidi.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bassopus.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\basswma.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\basswv.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\basszxtune.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bass_aac.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bass_ac3.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bass_ape.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bass_mpc.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bass_ofr.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bass_spx.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\bass_tta.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\OptimFROG.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\Addon\tags.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\bass.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\bassmix.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\basswasapi.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\bass_fx.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x64\bass_vst.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bassalac.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\basscd.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bassdsd.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bassenc.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bassenc_ogg.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bassenc_opus.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bassflac.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\basshls.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bassmidi.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bassopus.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\basswma.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\basswv.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\basszxtune.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bass_aac.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bass_ac3.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bass_adx.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bass_ape.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bass_mpc.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bass_ofr.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bass_spx.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bass_tta.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\bass_winamp.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\OptimFROG.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\Addon\tags.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\bass.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\bassmix.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\basswasapi.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\bass_fx.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\bass_vst.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\build\native\x86\bass_wadsp.dll" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\BassWinamp.txt" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\basszxtune.txt" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\BASS_AAC.txt" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\BASS_AC3.txt" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\bass_adx.txt" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\BASS_APE.txt" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\BASS_MPC.txt" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\BASS_OFR.txt" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\BASS_SPX.txt" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\BASS_TTA.txt" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\BASS_VST.TXT" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\bass_wadsp.txt" />
+    <Content Include="packages\BASS.Native.2.4.12.2\content\native\Help\tags-readme.txt" />
+    <Content Include="packages\CSCore.1.2.1.1\lib\net35-client\CSCore.dll" />
+    <Content Include="packages\CSCore.1.2.1.1\lib\net35-client\CSCore.XML" />
+    <Content Include="packages\MathNet.Filtering.0.4.0\lib\net35\MathNet.Filtering.dll" />
+    <Content Include="packages\MathNet.Filtering.0.4.0\lib\net35\MathNet.Filtering.xml" />
+    <Content Include="packages\MathNet.Filtering.0.4.0\lib\net40\MathNet.Filtering.dll" />
+    <Content Include="packages\MathNet.Filtering.0.4.0\lib\net40\MathNet.Filtering.xml" />
+    <Content Include="packages\MathNet.Filtering.0.4.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\MathNet.Filtering.dll" />
+    <Content Include="packages\MathNet.Filtering.0.4.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\MathNet.Filtering.XML" />
+    <Content Include="packages\MathNet.Filtering.0.4.0\license.txt" />
+    <Content Include="packages\MathNet.Filtering.0.4.0\readme.txt" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\net35\MathNet.Numerics.dll" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\net35\MathNet.Numerics.xml" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\net40\MathNet.Numerics.dll" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\net40\MathNet.Numerics.xml" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\MathNet.Numerics.dll" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\MathNet.Numerics.XML" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\portable-net45+netcore45+MonoAndroid1+MonoTouch1\MathNet.Numerics.dll" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\portable-net45+netcore45+MonoAndroid1+MonoTouch1\MathNet.Numerics.XML" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\MathNet.Numerics.dll" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1\MathNet.Numerics.XML" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\MathNet.Numerics.dll" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\MathNet.Numerics.XML" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\portable-net45+sl5+netcore45+MonoAndroid1+MonoTouch1\MathNet.Numerics.dll" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\lib\portable-net45+sl5+netcore45+MonoAndroid1+MonoTouch1\MathNet.Numerics.XML" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\license.txt" />
+    <Content Include="packages\MathNet.Numerics.3.8.0\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DissertationMarkPapas\obj\Debug\testBassGood.Properties.Resources.resources" />
+    <EmbeddedResource Include="DissertationMarkPapas\obj\Debug\testBassGood.Recording.resources" />
+    <EmbeddedResource Include="DissertationMarkPapas\obj\Debug\testBassGood.SpeechCorrection.resources" />
+    <EmbeddedResource Include="DissertationMarkPapas\Properties\Resources.resx" />
+    <EmbeddedResource Include="DissertationMarkPapas\Forms\Recording.resx">
+      <DependentUpon>Recording.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DissertationMarkPapas\Forms\SpeechCorrection.resx">
+      <DependentUpon>SpeechCorrection.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\DissertationMarkPapas\v15\" />
+    <Folder Include="DissertationMarkPapas\bin\Release\" />
+    <Folder Include="DissertationMarkPapas\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="packages\xunit.analyzers.0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\xunit.core.2.4.0\build\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\xunit.core.2.4.0\build\xunit.core.props'))" />
+    <Error Condition="!Exists('packages\xunit.core.2.4.0\build\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\xunit.core.2.4.0\build\xunit.core.targets'))" />
+  </Target>
+  <Import Project="packages\xunit.core.2.4.0\build\xunit.core.targets" Condition="Exists('packages\xunit.core.2.4.0\build\xunit.core.targets')" />
+</Project>

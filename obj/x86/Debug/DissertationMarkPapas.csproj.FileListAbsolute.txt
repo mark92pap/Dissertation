@@ -1,0 +1,66 @@
+C:\Users\Markos\Documents\Visual Studio 2015\Projects\diplwmatikiBass\obj\x86\Debug\DissertationMarkPapas.csprojAssemblyReference.cache
+C:\Users\Markos\Documents\Visual Studio 2015\Projects\diplwmatikiBass\obj\x86\Debug\DissertationMarkPapas.diplwmatikiBass.Properties.Resources.resources
+C:\Users\Markos\Documents\Visual Studio 2015\Projects\diplwmatikiBass\obj\x86\Debug\testBassGood.Recording.resources
+C:\Users\Markos\Documents\Visual Studio 2015\Projects\diplwmatikiBass\obj\x86\Debug\testBassGood.SpeechCorrection.resources
+C:\Users\Markos\Documents\Visual Studio 2015\Projects\diplwmatikiBass\obj\x86\Debug\DissertationMarkPapas.csproj.GenerateResource.cache
+C:\Users\Markos\Documents\Visual Studio 2015\Projects\diplwmatikiBass\obj\x86\Debug\DissertationMarkPapas.csproj.CoreCompileInputs.cache
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\obj\x86\Debug\DissertationMarkPapas.csprojAssemblyReference.cache
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\obj\x86\Debug\testBassGood.Recording.resources
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\obj\x86\Debug\testBassGood.SpeechCorrection.resources
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\obj\x86\Debug\DissertationMarkPapas.csproj.GenerateResource.cache
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\obj\x86\Debug\DissertationMarkPapas.csproj.CoreCompileInputs.cache
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\ConsoleApplication.exe.config
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\ConsoleApplication.exe
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\ConsoleApplication.pdb
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\Bass.Net.dll
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\CSCore.dll
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\Exocortex.DSP.v1.dll
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\MathNet.Filtering.dll
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\MathNet.Numerics.dll
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\Bass.Net.xml
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\CSCore.xml
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\Exocortex.DSP.v1.pdb
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\MathNet.Filtering.xml
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\MathNet.Numerics.xml
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\obj\x86\Debug\DissertationMarkPapas.csproj.CopyComplete
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\obj\x86\Debug\ConsoleApplication.pdb
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\obj\x86\Debug\DissertationMarkPapas.DissertationMarkPapas.Properties.Resources.resources
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\xunit.abstractions.dll
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\xunit.assert.dll
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\xunit.core.dll
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\xunit.execution.desktop.dll
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\xunit.abstractions.xml
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\xunit.assert.xml
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\xunit.core.xml
+C:\Users\Markos\Documents\Visual Studio 2017\Projects\DissertationMarkPapas\bin\Debug\xunit.execution.desktop.xml
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\ConsoleApplication.exe.config
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\ConsoleApplication.exe
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\ConsoleApplication.pdb
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\Bass.Net.dll
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\CSCore.dll
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\Exocortex.DSP.v1.dll
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\MathNet.Filtering.dll
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\MathNet.Numerics.dll
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\xunit.abstractions.dll
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\xunit.assert.dll
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\xunit.core.dll
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\xunit.execution.desktop.dll
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\Bass.Net.xml
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\CSCore.xml
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\Exocortex.DSP.v1.pdb
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\MathNet.Filtering.xml
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\MathNet.Numerics.xml
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\xunit.abstractions.xml
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\xunit.assert.xml
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\xunit.core.xml
+C:\Users\markp\source\repos\DissertationMarkPapas\bin\Debug\xunit.execution.desktop.xml
+C:\Users\markp\source\repos\DissertationMarkPapas\obj\x86\Debug\DissertationMarkPapas.csprojAssemblyReference.cache
+C:\Users\markp\source\repos\DissertationMarkPapas\obj\x86\Debug\DissertationMarkPapas.DissertationMarkPapas.Properties.Resources.resources
+C:\Users\markp\source\repos\DissertationMarkPapas\obj\x86\Debug\testBassGood.Recording.resources
+C:\Users\markp\source\repos\DissertationMarkPapas\obj\x86\Debug\testBassGood.SpeechCorrection.resources
+C:\Users\markp\source\repos\DissertationMarkPapas\obj\x86\Debug\DissertationMarkPapas.csproj.GenerateResource.cache
+C:\Users\markp\source\repos\DissertationMarkPapas\obj\x86\Debug\DissertationMarkPapas.csproj.CoreCompileInputs.cache
+C:\Users\markp\source\repos\DissertationMarkPapas\obj\x86\Debug\DissertationMarkPapas.csproj.CopyComplete
+C:\Users\markp\source\repos\DissertationMarkPapas\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\markp\source\repos\DissertationMarkPapas\obj\x86\Debug\ConsoleApplication.pdb
